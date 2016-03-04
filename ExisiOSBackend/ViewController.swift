@@ -31,10 +31,10 @@ class ViewController: UIViewController, RiffleDelegate {
 
         //This is your apps backend - Find it in Backend/main.swift
         //Change USERNAME to your username that you used to sign up with at my.exis.io
-        app = RiffleDomain(domain: "xs.demo.USERNAME.swifthelloworld")
+        app = Domain(name: "xs.demo.USERNAME.swifthelloworld")
 
         //Set up your domain
-        me = RiffleDomain(name: "localagent", superdomain: app!)
+        me = Sender(name: "localagent", superdomain: app!)
         me!.delegate = self
 
 
